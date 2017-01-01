@@ -9,7 +9,7 @@ BP_DIR=$(cd $(dirname ${0:-}); cd ..; pwd)
 
 # Set defaults for our configuration variables.  Stable Rust is sufficiently
 # stable at this point that I think we can just default it.
-VERSION=stable
+VERSION=nightly
 
 # Set this to "1" in `RustConfig` to just install a Rust toolchain and not
 # build `Cargo.toml`.  This is useful if you have a project written in Ruby
@@ -39,7 +39,7 @@ you do not define CARGO_URL or CARGO_VERSION in RustConfig.  If you're
 using an older version of Rust, and you need to re-deploy an existing
 application, try setting your buildpack to:
 
-  https://github.com/emk/heroku-buildpack-rust.git#old-rust
+  https://github.com/nashenas88/heroku-buildpack-rust.git#old-rust
 EOF
     exit 1
 fi
